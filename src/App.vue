@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-button type="primary">TEST</el-button>
+    <div class="main"></div>
   </div>
 </template>
 
@@ -16,4 +16,25 @@ import { Button } from 'element-ui';
 export default class App extends Vue {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.main {
+  height: 100%;
+  margin: 0 auto;
+  width: 800px;
+}
+@media only screen and (min-width: 1000px) {
+  .main {
+    width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main {
+    width: 1000px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main {
+    width: 1200px;
+  }
+}
+</style>
