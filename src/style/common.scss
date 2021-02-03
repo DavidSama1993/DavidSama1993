@@ -13,3 +13,28 @@ html, body {
   background-size: 1920px auto;
   background-repeat: no-repeat;
 }
+
+.clear {
+  zoom: 1;
+  &::before {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
